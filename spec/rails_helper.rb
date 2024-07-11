@@ -10,7 +10,7 @@ abort("The Rails environment is running in production mode!") if Rails.env.produ
 
 RSpec.configure do |config|
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
-  config.fixture_path = "#{::Rails.root}/spec/fixtures"
+  config.fixture_path= "#{::Rails.root}/spec/fixtures"
 
   # Add `:type` to automatically mixin different behaviours to your tests based on their file location
   config.infer_spec_type_from_file_location!

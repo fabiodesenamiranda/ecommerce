@@ -18,10 +18,11 @@ gem 'rack-cors'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]
-  gem "rspec-rails", "~> 5.0"
+  gem "rspec-rails", "~> 6.1.3"
   gem "factory_bot_rails"
   gem "shoulda-matchers"
   gem "faker"
+  gem 'actionview', '~> 7.1', '>= 7.1.3.4'
 end
 
 group :development do
