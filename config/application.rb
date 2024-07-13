@@ -45,7 +45,7 @@ module EcommerceApi
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
 
-    config.i18n.autoload_path += %W["#{config.root}/app/validators  "]
+    config.autoload_paths += %W["#{config.root}/app/validators  "]
 
   end
 end

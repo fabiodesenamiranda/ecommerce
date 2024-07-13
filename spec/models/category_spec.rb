@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'rspec/rails'
 
 RSpec.describe Category, type: :model do
   it { is_expected.to validate_presence_of(:name) }
