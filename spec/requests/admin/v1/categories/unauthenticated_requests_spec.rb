@@ -7,14 +7,14 @@ RSpec.describe "Admin::V1::Categories without authentication", type: :request do
     let!(:categories) { create_list(:category, 5) }
 
     before(:each) { get url }
-    include_examples "unauthenticated access"
+    include_examples "unauthenticated_access"
   end
 
   context "POST /categories" do
     let(:url) { "admin/v1/categories" }
 
     before(:each) { post url }
-    include_examples "unauthenticated access"
+    include_examples "unauthenticated_access"
   end
 
   context "PATCH /categories/:id" do
@@ -22,7 +22,7 @@ RSpec.describe "Admin::V1::Categories without authentication", type: :request do
     let(:url) { "admin/v1/categories/#{category.id}" }
 
     before(:each) { patch url }
-    include_examples "unauthenticated access"
+    include_examples "unauthenticated_access"
   end
 
   context "DELETE /categories/:id" do
